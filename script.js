@@ -53,13 +53,16 @@ function pauseTimer() {
   // document.getElementById("pause");
   // console.log("pause");
   clearInterval(interval);
-  renderTime();
+  renderTimer();
 }
 
 function stopTimer() {
   // Add functionality to stop time on screen
   // document.getElementById("stop");
   // console.log("stop");
+  secondsGone = 0;
+  setTimer();
+  renderTimer();
 }
 
 function formatMinutes() {
