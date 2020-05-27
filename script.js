@@ -20,8 +20,8 @@ stopButton.addEventListener("click", stopTimer);
 function setTimer() {
   let minutes;
 
-  minutes = workMinutes.value.trim();
-  minutes = restMinutes.value.trim();
+  minutes = workMinutes.value.trim(); 
+  // minutes = restMinutes.value.trim();
 
   clearInterval(interval);
   totalSeconds = minutes * 60;
